@@ -44,6 +44,10 @@ public class ArrayUtilities {
         }
         return contador;
     }
+
+    static int copyOf(int[] array) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
