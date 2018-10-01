@@ -41,7 +41,7 @@ public class Aula3 {
         
         
         
-        int[] array = {7,2,3,4,5,6,1};
+        int[] array = {7,4,5,6,1,2};
         String str = ArrayUtilities.toString(array);
         System.out.println("String: " + str);
         
@@ -51,9 +51,24 @@ public class Aula3 {
         int min = ArrayUtilities.minimumOf(array);
         System.out.println("String Min: " + min);
         
-        int copy = ArrayUtilities.copyOf(array);
-        System.out.println("Copy");
-                
+        int [] copy = ArrayUtilities.copyOf(array);
+        System.out.println("Copy "+ArrayUtilities.toString(array));
+        
+        boolean contai = ArrayUtilities.contains(array,8);
+        System.out.println("Contem " + contai);
+        
+        boolean contemDuplicado=ArrayUtilities.containsDuplicates(array);
+        System.out.println("ContemDuplicado  " + contemDuplicado);
+        
+        int index = ArrayUtilities.indexOf(array,2);
+        System.out.println("A posiçao é "+index);
+        
+        int[] add = ArrayUtilities.addOf(9,array);
+        System.out.println("New array" + ArrayUtilities.toString(add));
+        
+        int[] remove = ArrayUtilities.removeOf(array,7);
+        System.out.println("Remover o numero 7" + ArrayUtilities.toString(remove));
+           
     }
    
     
